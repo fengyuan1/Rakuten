@@ -4,17 +4,12 @@
     "description": "rakuten 酒店供应商请求接口",
     "authors": [
         {
-            "name": "fengyuan",
-            "rubix/ml": "dev-master"
+            "name": "fengyuan"
         }
     ],
     "license": "MIT",
     "require": {
-        "php": ">=5.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "ty\\": "src/"
-        }
+        "php": ">=5.4",
+		"rubix/ml": "dev-master"
     }
 }
