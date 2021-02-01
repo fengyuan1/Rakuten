@@ -4,7 +4,8 @@
     "description": "rakuten 酒店供应商请求接口",
     "authors": [
         {
-            "name": "fengyuan"
+            "name": "fengyuan",
+            "rubix/ml": "dev-master"
         }
     ],
     "license": "MIT",
