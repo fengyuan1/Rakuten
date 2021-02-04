@@ -58,6 +58,7 @@ class Booking
      */
     public function PostBookingPolicy($form_params)
     {
+
         $url=$this->config['rakuten_booking_url'].'/booking_policy';
         $key=$this->config['rakuten_booking_api_key'];
         $result=GuzzleRequest::GuzzleRequest($key,$url,'POST',$form_params);
