@@ -76,7 +76,7 @@ class Booking
      */
     public function GetBookingPolicy($booking_policy_id){
 
-        $url=$this->config['rakuten_booking_url'].'/booking_policy/:'.$booking_policy_id;
+        $url=$this->config['rakuten_booking_url'].'/booking_policy/'.$booking_policy_id;
         $key=$this->config['rakuten_booking_api_key'];
         $result=GuzzleRequest::GuzzleRequest($key,$url,'GET');
 
@@ -111,7 +111,7 @@ class Booking
      */
     public function PostBook($booking_id,$form_params)
     {
-        $url=$this->config['rakuten_booking_url'].'/book/:'.$booking_id;
+        $url=$this->config['rakuten_booking_url'].'/book/'.$booking_id;
         $key=$this->config['rakuten_booking_api_key'];
         $result=GuzzleRequest::GuzzleRequest($key,$url,'POST',$form_params);
 
@@ -129,7 +129,7 @@ class Booking
      */
     public function GetBookStatus($booking_id,$status)
     {
-        $url=$this->config['rakuten_booking_url'].'/book/:'.$booking_id.'/'.$status;
+        $url=$this->config['rakuten_booking_url'].'/book/'.$booking_id.'/'.$status;
         $key=$this->config['rakuten_booking_api_key'];
         $result=GuzzleRequest::GuzzleRequest($key,$url,'GET');
 
